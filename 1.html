@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+ <!--js改变html的内容-->
+<!--<p id="demo1">javascript能做什么</p>
+<button  onclick="document.getElementById('demo1').innerHTML='hellojavascript'">点击我</button>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--计算1到100的和-->
+<!--<button onclick="qh()"></button>
+<p id="demo"></p>
+<script>
+  function qh(){
+    var x=0;
+    for(i=0;i<=100;i++){
+       x+=i;
+    }
+    document.getElementById("demo").innerHTML=x;
+  }
+</script>-->
+
+
+
+
+
+<!--打印100以内所有偶数的和-->
+<!--<button onclick="qh()"></button>
+<p id="demo"></p>
+<script>
+  function qh(){
+    var x=0;
+    for(i=0;i<=100;i+=2){
+        x+=i;
+    }
+    document.getElementById("demo").innerHTML=x;
+  }
+</script>-->
+
+
+
+
+
+
+
+<!--打印100以内7的倍数-->
+<!--<button onclick="print()"></button>
+<script>
+  
+  function print(){
+   
+    for(i=1;i<=100;i++){
+            if(i%7==0){
+              document.write(i);
+              document.write("<br>");
+            }
+      }
+    }
+</script>-->
+
+
+
+
+
+
+
+
+<!--把小时转换为天数又多少小时-->
+<!--<p id="demo"></p>
+<script>
+  function chang(x){
+    var day=Math.floor(x/24);//这是剔除小数的方法。
+    var hours=x%24;
+    document.getElementById("demo").innerHTML=day+"天又"+hours+"小时";
+  }
+  chang(prompt("请输入总共的小时数"));
+</script>-->
+
+
+
+
+
+
+
+
+
+<!--js中数组的定义方法，外面使用中括号，里面如果为字符串需要打引号，然后分别用逗号隔开-->
+<!--<script>
+  var brand=["bentian","bmw","benci","falali"];
+   for(i=0;i<=3;i++){
+     document.write(brand[i]);
+     document.write("<br>");
+   }
+</script>-->
+
+
+
+
+
+
+
+
+<!--数组的第二种定义方法-->
+<!--<script>
+  var brand=new Array("beitian","bmw","benci","falali")//使用new的方法来定义数组
+  for(i=0;i<=3;i++){
+    document.write(brand[i]);
+    document.write("<br>");
+  }
+</script>-->
+
+
+
+
+
+
+
+
+<!--访问数组的长度-->
+<!--<script>
+  var colors=[
+   "blue",
+   "red" ,
+   "green",
+   "purple",
+   "pink" 
+  ];
+  document.write(colors.length);
+</script>-->
+
+
+
+
+
+
+
+
+<!--访问最后一个数组的长度-->
+<!--<script>
+ var colors=[
+   "blue",
+   "red" ,
+   "green",
+   "purple",
+   "pink" 
+  ];
+ document.write(colors[colors.length-1]);//调用总数组的长度减去1就可以获得最后一个元素的位置-->
+
+
+
+
+
+
+ <!--使用push向数组添加新元素(在末尾添加新元素)-->
+<!--<button onclick="add()">点击我向数组中添加新元素</button>
+<p id="demo"></p>
+<script>
+  var fruits=[
+    "apple",
+    "banana",
+    "orange",
+  ]
+  document.getElementById("demo").innerHTML=fruits;
+ function add(){
+     fruits.push("lemon");
+     document.getElementById("demo").innerHTML=fruits;
+  
+ }
+</script>-->
+
+
+
+
+
+
+<!--使用数组还可以返回新数组的长度-->
+<!--<button onclick="add()">点击按钮可以查看当增加数组个数并查看数组的个数</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+ var fruits=[
+    "apple",
+    "banana",
+    "orange",
+  ]//需要按照顺序书写
+  document.getElementById("demo1").innerHTML=fruits;
+  function add(){
+     document.getElementById("demo2").innerHTML=fruits.push("lemon");//查看数组的个数
+     document.getElementById("demo1").innerHTML=fruits;//显示数组内容
+  }
+</script>-->
+
+
+
+
+
+
+
+<!--使用pop方法删除数组中的最后一个值，他的第二个方法是返回被删除的数组的元素-->
+<!--<button onclick="deletad()">点击我删除数组的最后一个元素</button>
+<p id="demo0"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+ var colors=[
+   "red",
+   "green",
+   "blue",
+   "black",
+ ]//需要按照顺序
+ document.getElementById("demo0").innerHTML=colors;//最开始的数组
+ function deletad(){
+document.getElementById("demo2").innerHTML=colors.pop();//被删除的最后一个数组的元素
+document.getElementById("demo1").innerHTML=colors;//删除后剩下的数组
+  
+ }
+</script>-->
+
+
+
+
+
+
+
+
+
+<!--使用shift来删除数组的第一个元素,他的第二个方法和pop一样，显示被删除的是哪个元素-->
+ <!--<button onclick="deleted()"></button>
+ <p id="demo1"></p>
+ <p id="demo2"></p>
+ <p id="demo3"></p>
+
+ <script>
+    var colors=[
+       'red',
+       'green',
+       'blue',
+       'purple',
+       'black'
+     ]  //也要按照顺序书写
+     document.getElementById("demo1").innerHTML=colors;
+      function deleted(){
+      document.getElementById("demo3").innerHTML=colors.shift();
+      document.getElementById("demo2").innerHTML=colors;
+   }
+ </script>-->
+
+
+
+
+
+
+
+
+
+
+ <!--unshift可以在开头添加新的数组元素，第二个功能是返回行新的数组元素的个数-->
+<!--<button onclick="add()">点击向开头增添新的元素，并返回现在的元素个数</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+   var colors=[
+       'red',
+       'green',
+       'blue',
+       'purple',
+       'black'
+     ] 
+     document.getElementById("demo1").innerHTML=colors;
+     function add(){
+       document.getElementById("demo3").innerHTML=colors.unshift("pink");
+       document.getElementById("demo2").innerHTML=colors;
+
+     }
+</script>
+-->
+
+
+
+
+
+
+
+
+<!--使用concat来合并数组-->
+<!--<button onclick="ands()">点此合并两个数组</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+  var boyName=[
+    "kangkang",
+    "michel",
+    "gula"
+  ]
+  document.getElementById("demo1").innerHTML=boyName;
+
+  var gilrName=[
+    'jane',
+    'lisha',
+    'lili',
+  ]
+  document.getElementById("demo2").innerHTML=gilrName;
+ function ands(){
+    var persons=boyName.concat(gilrName);//合并数组的代码，如果要合并更多的数组boyName.concat(1,2,...)
+    document.getElementById('demo3').innerHTML=persons;
+ }      
+
+</script>-->
+                  
+
+
+
+
+
+
+
+<!--用slice来裁剪数组-->
+<!--<button onclick="cut()" class="cut">点击我裁剪元素</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+  var colors=[
+    "red",
+    "green",
+    "blue",
+    "purple",
+    "orange",
+    "yellow",
+    "brown",
+  ]
+  document.getElementById("demo1").innerHTML=colors;
+   function cut(){
+     var rest=colors.slice(1,6);//从color[1]开始裁剪,不包括[6]。
+     document.getElementById('demo2').innerHTML=rest;
+   }
+</script>-->
+
+
+
+
+
+
+
+
+<!--对数组元素为字符串的按照字母顺序进行排序-->
+<!--<button onclick="px()"></button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+  var colors=[
+  "red",
+    "green",
+    "blue",
+    "purple",
+    "orange",
+    "yellow",
+    "brown",
+  ]
+  document.getElementById("demo1").innerHTML=colors;
+  function px(){
+    colors.sort();
+    document.getElementById("demo2").innerHTML=colors;
+  }
+</script>
+-->
+
+
+
+
+
+
+<!--通过sort和reverse来反转数组-->
+<!--<button onclick="fz()">点我反转数组(从大到小排列)</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+   var colors=[
+  "red",
+    "green",
+    "blue",
+    "purple",
+    "orange",
+    "yellow",
+    "brown",
+  ]
+ document.getElementById("demo1").innerHTML=colors;
+ function fz(){
+    colors.sort();
+    colors.reverse();
+    document.getElementById("demo2").innerHTML=colors;
+ 
+ }
+</script>-->
+
+
+
+
+
+
+<!--对数组值为数字的数组进行排序-->
+<!--<button onclick="px()"></button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+  var num=[
+    1,3,5,2,4
+  ]
+  document.getElementById("demo1").innerHTML=num;
+  function px() {
+     num.sort(function(a,b){return a-b});  //倒序就是b-a;
+     document.getElementById("demo2").innerHTML=num;
+}
+</script>-->
+
+
+
+
+
+
+<!--用遍历数组的方法查找数组的最大值-->
+<!--<p id="demo"></p>
+<script>
+  var num=[
+    1,3,5,7,10,9
+  ];
+  var max=-Infinity;//代表无穷小
+  for(i=0;i<num.length;i++){
+      if (num[i]>max){
+        max=num[i];
+      }
+  }
+  document.getElementById("demo").innerHTML=max;
+
+</script>-->
+
+
+
+
+
+
+<!--遍历数组查找数组中的最小值-->
+<!--<p id="demo"></p>
+<script>
+  var num=[
+    2,9,7,1,4,6
+  ];
+  var min=Infinity
+  for(i=0;i<num.length;i++){
+    if(num[i]<min){
+      min=num[i];
+    }
+   document.getElementById("demo").innerHTML=min;
+  }
+</script>
+-->
+
+
+
+
+
+
+
+<!--使用concat来连接字符串-->
+<!--<script>
+  var x="h";
+  var y="e";
+  var z=x.concat(y,"l","l","o");
+  document.write(z);
+</script>-->
+</body>
+</html>

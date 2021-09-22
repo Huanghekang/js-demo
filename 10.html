@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--js表单验证(当输入的数字在1到10的范围之内将打出验证成功的字符，否则将输入验证失败的字符)-->
+<input type="text" id="demo">
+<button onclick="bdyz()">点击提交</button>
+<p>请输入从1到10之间的字段</p>
+<p id="jg"></p>
+ <script>
+    function bdyz(){
+        var x=document.getElementById("demo").value;
+        var z=isNaN(x);
+        var text
+        if(x>=1&&x<=10){
+          text="验证成功";
+        }
+        else{
+          text="验证失败";
+        }
+        document.getElementById("jg").innerHTML=text;
+      }
+</script>
+</body>
+</html>

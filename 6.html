@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+<body>
+  <!--利用argumnets对象来检测参数的个数，一般函数应该设置多少形参，在调用的时候也同样给多少实参，但是arguments相当于是实参的数据（但不是），无需给予形参就能访问他们。-->
+<script>
+ function legths(){
+   alert(arguments.length)
+ }
+ legths(1,2);
+ legths("1","2",3);
+</script>
+</body>
+</html>
